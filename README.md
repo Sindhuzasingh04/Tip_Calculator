@@ -18,19 +18,19 @@
 - 
 
 
-|	 Requirments  			 																|	Verified |	 success|
-| :---        																				|   :----:   |     ---: |
-| Verify that user is able to launch the application   										| Yes        |-[X]      |
-| Verify that heading "TIP CALCULATOR" is visible   										| Yes        |-[X]      |
-| Verify that "Bill amount", "Tip percentage", "Number of people" options are visible. 		| Yes        |-[X]      |
-| Verify that "calculate" button is visible   												| Yes        |-[X]      |
-| Verify that "Tip per person" and "Total per person" is not visible on page load   		| Yes        |-[X]      |
-| Verify that user is able to enter the Numbers in Input 									| Yes        |-[X]      |
-| Verify that tips is calculated when all input fields are filled   						| Yes        |-[X]      |
-| Verify that "Tip per person" and "Total per person" values are upto two decimal points  	| Yes        |-[X]      |
-| Verify that "down arrow" decreases the input value  										| Yes        |-[X]      |
-| Verify that "up arrow" increases the input value   										| Yes        |-[X]      |
-| Verify that output is right   															| Yes        |-[X]      |
+|	 Requirments  			 																|	Verified |success					|
+| :---        																				|   :----:   |     ---: 				|
+| Verify that user is able to launch the application   										| Yes        |:heavy_check_mark:		|
+| Verify that heading "TIP CALCULATOR" is visible   										| Yes        |:heavy_check_mark:		|
+| Verify that "Bill amount", "Tip percentage", "Number of people" options are visible. 		| Yes        |:heavy_check_mark:		|
+| Verify that "calculate" button is visible   												| Yes        |:heavy_check_mark:		|
+| Verify that "Tip per person" and "Total per person" is not visible on page load   		| Yes        |:heavy_check_mark:		|
+| Verify that user is able to enter the Numbers in Input 									| Yes        |:heavy_check_mark:		|
+| Verify that tips is calculated when all input fields are filled   						| Yes        |:heavy_check_mark:		|
+| Verify that "Tip per person" and "Total per person" values are upto two decimal points  	| Yes        |:heavy_check_mark:		|
+| Verify that "down arrow" decreases the input value  										| Yes        |:heavy_check_mark:		|
+| Verify that "up arrow" increases the input value   										| Yes        |:heavy_check_mark:		|
+| Verify that output is right   															| Yes        |:heavy_check_mark:		|
 
 
 
