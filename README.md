@@ -18,7 +18,7 @@
 - 
 
 
-|### Requirments  			 																|###Verified |###success|
+|	 Requirments  			 																|	Verified |	 success|
 | :---        																				|   :----:   |     ---: |
 | Verify that user is able to launch the application   										| Yes        | [X]      |
 | Verify that heading "TIP CALCULATOR" is visible   										| Yes        | [X]      |
