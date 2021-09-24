@@ -18,19 +18,19 @@
 - 
 
 
-|	 Requirments  			 																|	Verified |success					|
-| :---        																				|   :----:   |     ---: 				|
-| Verify that user is able to launch the application   										| Yes        |:heavy_check_mark:		|
-| Verify that heading "TIP CALCULATOR" is visible   										| Yes        |:heavy_check_mark:		|
-| Verify that "Bill amount", "Tip percentage", "Number of people" options are visible. 		| Yes        |:heavy_check_mark:		|
-| Verify that "calculate" button is visible   												| Yes        |:heavy_check_mark:		|
-| Verify that "Tip per person" and "Total per person" is not visible on page load   		| Yes        |:heavy_check_mark:		|
-| Verify that user is able to enter the Numbers in Input 									| Yes        |:heavy_check_mark:		|
-| Verify that tips is calculated when all input fields are filled   						| Yes        |:heavy_check_mark:		|
-| Verify that "Tip per person" and "Total per person" values are upto two decimal points  	| Yes        |:heavy_check_mark:		|
-| Verify that "down arrow" decreases the input value  										| Yes        |:heavy_check_mark:		|
-| Verify that "up arrow" increases the input value   										| Yes        |:heavy_check_mark:		|
-| Verify that output is right   															| Yes        |:heavy_check_mark:		|
+|	 Requirments  			 																|	Verified 				|success				|
+| :---        																				|   :----:   				|     ---: 				|
+| Verify that user is able to launch the application   										| :heavy_check_mark:        |yes					|
+| Verify that heading "TIP CALCULATOR" is visible   										| :heavy_check_mark:        |yes					|
+| Verify that "Bill amount", "Tip percentage", "Number of people" options are visible. 		| :heavy_check_mark:        |yes					|
+| Verify that "calculate" button is visible   												| :heavy_check_mark:        |yes					|
+| Verify that "Tip per person" and "Total per person" is not visible on page load   		| :heavy_check_mark:        |yes					|
+| Verify that user is able to enter the Numbers in Input 									| :heavy_check_mark:        |yes					|
+| Verify that tips is calculated when all input fields are filled   						| :heavy_check_mark:        |yes					|
+| Verify that "Tip per person" and "Total per person" values are upto two decimal points  	| :heavy_check_mark:        |yes					|
+| Verify that "down arrow" decreases the input value  										| :heavy_check_mark:        |yes					|
+| Verify that "up arrow" increases the input value   										| :heavy_check_mark:        |yes					|
+| Verify that output is right   															| :heavy_check_mark:        |yes					|
 
 
 
