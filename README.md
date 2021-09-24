@@ -16,7 +16,7 @@
 - All of the test cases are passed and it can give answers upto 3 decimals places.S
 
 
-|	 Requirments  			 																|	Verified 				|Success				|
+|	 Requirements  			 																|	Verified 				|Success				|
 | :---        																				|   :----:   				|     ---: 				|
 | Verify that user is able to launch the application   										| :heavy_check_mark:        |yes					|
 | Verify that heading "TIP CALCULATOR" is visible   										| :heavy_check_mark:        |yes					|
