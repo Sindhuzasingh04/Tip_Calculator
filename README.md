@@ -1,10 +1,10 @@
-# Tip calculator program | Grapecity
+# Tip Calculator program | GRAPECITY
 
 ### Date created : 23 sept, 2021
 
-### created by : Sindhuza Singh
+### Created by : Sindhuza Singh
 
-## application is used to calculate the amount of tip per person and the total bill person when given total bill amount, number of persons and the tip percentage
+## Application is used to calculate the amount of tip per person and the total bill person when given total bill amount, number of persons and the tip percentage
 
 
 ## Features
@@ -13,12 +13,10 @@
 
 - the UI is fairly interactive and easy to use.
 
-- All of the test cases are passed and it can give answers upto 3 decimals places.
-
-- 
+- All of the test cases are passed and it can give answers upto 3 decimals places.S
 
 
-|	 Requirments  			 																|	Verified 				|success				|
+|	 Requirments  			 																|	Verified 				|Success				|
 | :---        																				|   :----:   				|     ---: 				|
 | Verify that user is able to launch the application   										| :heavy_check_mark:        |yes					|
 | Verify that heading "TIP CALCULATOR" is visible   										| :heavy_check_mark:        |yes					|
