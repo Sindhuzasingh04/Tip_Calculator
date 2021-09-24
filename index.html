@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Tip Calculator | Grapecity</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+  <!-- Javascript Link -->
+
+  <!-- css -->
+
+  
+
+
+</head>
+
+<body class="text-center">
+  <form>
+    </div>
+    <div style=" 
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    ">
+      <div class="row" style="margin-top: 200px;">
+        <div class="col-sm-6">
+          <div class="card" style="text-align: left;">
+            <div class="card-body">
+              <p>Total Bill</p>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="number" class="form-control" aria-label="Dollar amount (with dot and two decimal places)"
+                  id="input" placeholder="Total Bill Amount">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Tip %</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="decrease" onclick="decreaseValue()" value="Increase Value">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="0%" aria-label="" aria-describedby="basic-addon1" style="text-align: center; " id="tipPrecentage">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary"  type="button" id="increase" onclick="increaseValue()" value="Increase Value">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Number Of Persons</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary" type="button" id="decrease" onclick="decreaseValuePerson()" value="Increase Value">-</button>
+                  </div>
+                  <input type="number" class="form-control" value="0" aria-label="" aria-describedby="basic-addon1" style="text-align: center; " id="person">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary"  type="button" id="increase" onclick="increaseValuePerson()" value="Increase Value">+</button>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-info" onclick="getInput();">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card" style="text-align: left; height: 100%; align-items: left;">
+            <div class="card-body">
+              <h5 class="card-title">Tip</h5>
+              <p>per person</p>
+              <h3 id="tip"></h3>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Total</h5>
+              <p>per person</p>
+              <h3 id="bill"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    function getInput() {
+      totalBill = document.getElementById("input").value;
+      tipValue = document.getElementById("tipPrecentage").value;
+      persons = document.getElementById("person").value;
+      console.log(totalBill, tipValue, persons);
+      billCalculator(totalBill, tipValue, persons);
+    }
+
+    function increaseValuePerson() {
+      var value = parseInt(document.getElementById('person').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('person').value = value;
+    }
+
+    function decreaseValuePerson() {
+      var value = parseInt(document.getElementById('person').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('person').value = value;
+    }
+
+    function increaseValue() {
+      var value = parseInt(document.getElementById('tipPrecentage').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value=value+5;
+      document.getElementById('tipPrecentage').value = value;
+    }
+
+    function decreaseValue() {
+      var value = parseInt(document.getElementById('tipPrecentage').value, 10);
+      value = isNaN(value) ? 1 : value;
+      value < 0 ? value = 0 : '';
+      value=value-5;
+      document.getElementById('tipPrecentage').value = value;
+    }
+
+    function billCalculator(bill, tipShare, participant) {
+      console.log(bill, tipShare, participant);
+      tipTotal = ((bill / 100) * tipShare);
+      tipPerHead = (tipTotal / participant);
+      billPerHead =((bill / participant) + tipPerHead);
+      console.log(billPerHead);
+      console.log(tipTotal);
+      console.log(tipPerHead);
+      putValues(tipPerHead, billPerHead);
+    }
+
+    function putValues(tip, bill) {
+      document.getElementById("tip").innerHTML = tip;
+      document.getElementById("bill").innerHTML = bill;
+      console.log(tip, bill);
+    }
+  </script>
+</body>
+
+</html>
